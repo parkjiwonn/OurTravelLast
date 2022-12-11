@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#EFF2F4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="신고"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <View
+        android:background="#575754"
+        android:layout_width="350dp"
+        android:layout_height="3px"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="해당 유저를 신고하는 이유"
+            android:layout_gravity="left"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="어떤 옵션을 선택해도 상대방은 이를 알 수 없습니다.\n누군가가 위급한 상황에 있다고 생각된다면\n즉시 현지 응급 서비스 기관에 연락하시기 바랍니다."
+            />
+
+        <Button
+            android:id="@+id/btn_op1"
+            android:text="음란물"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:backgroundTint="#1E88E5">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_op2"
+            android:text="부적절한 콘텐츠"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:backgroundTint="#1E88E5">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_op3"
+            android:text="부적절한 콘텐츠"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:backgroundTint="#1E88E5">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_op4"
+            android:text="스팸 또는 광고"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:backgroundTint="#1E88E5">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_op5"
+            android:text="욕설 또는 혐오 발언"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:backgroundTint="#1E88E5">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_op6"
+            android:text="허위 게시글"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:backgroundTint="#1E88E5">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_op7"
+            android:text="중복 게시글"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:backgroundTint="#1E88E5">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_op8"
+            android:text="도용"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:backgroundTint="#1E88E5">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_cancle"
+            android:text="취소"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:backgroundTint="#133049">
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

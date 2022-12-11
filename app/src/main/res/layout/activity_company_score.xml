@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.CompanyScoreActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#0194F9">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_west_24"
+            android:background="#00000000"
+            >
+
+        </ImageButton>
+
+        <Button
+            android:id="@+id/btn_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:layout_gravity="right"
+            android:backgroundTint="#0194F9"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="동행 점수 남기기"
+            android:textColor="#ffffff">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tx_announce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toTopOf="@id/rv_company"
+        android:layout_marginTop="10dp"
+        android:text="유저 님과의 동행은 어떠셨나요?"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/tx_announce"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

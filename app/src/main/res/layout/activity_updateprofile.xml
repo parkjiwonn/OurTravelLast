@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".setting.UpdateProfileActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0194F9">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_west_24"
+            android:background="#00000000"
+            >
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="프로필 설정"
+            android:textColor="#ffffff">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_photo"
+            android:layout_width="100dp"
+            android:layout_height="38dp"
+            android:backgroundTint="#1E88E5"
+            android:text="사진 선택" />
+
+        <Button
+            android:id="@+id/btn_basicphoto"
+            android:layout_width="160dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="#1E88E5"
+            android:text="기본 이미지로 설정" />
+
+    </LinearLayout>
+    <View
+        android:background="#575754"
+        android:layout_width="350dp"
+        android:layout_height="3px"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="[닉네임 설정방법]\n특수기호, 공백 사용불가 / 글자수 10자 제한"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="닉네임 설정"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_nick"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+
+            android:maxLength="10"
+            />
+
+        <Button
+            android:id="@+id/btn_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="중복 확인"
+            android:backgroundTint="#0194F9"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nickconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="#FF0000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="자기 소개"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_produce"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="40dp"
+            android:inputType="textMultiLine"
+            android:scrollHorizontally="false"
+            android:lines="3"
+            android:maxLength="60"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="최대 60자"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="150dp"
+            android:hint="0 / 60"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_modify"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="수정"
+
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0194F9"
+        >
+    </Button>
+
+
+
+
+
+</LinearLayout>

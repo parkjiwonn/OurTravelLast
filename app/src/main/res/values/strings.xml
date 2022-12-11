@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">OurTravel</string>
+    <string name="api_key">AIzaSyDEW1oA9sY19ffIEebt_zktuZgyO87yZH8</string>
+    <string name="weather_url">http://api.openweathermap.org/</string>
+    <string name="weather_app_id">119cc48085282c7e6fed4f09b14b416d</string>
+</resources>

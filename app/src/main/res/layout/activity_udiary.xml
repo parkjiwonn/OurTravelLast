@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".diary.UdiaryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0194F9">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_west_24"
+            android:background="#00000000"
+            >
+
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="일기 수정 "
+            android:textColor="#ffffff">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_modify"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="수정 완료"
+            android:layout_gravity="right"
+            android:backgroundTint="#716E6E"
+            >
+
+        </Button>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="내용을 입력해주세요." />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이미지\n불러오기"
+                android:backgroundTint="#1E88E5"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

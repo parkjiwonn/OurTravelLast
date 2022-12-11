@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Weather.WeatherActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#0194F9"
+        >
+
+
+        <TextView
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="현재 날씨"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:gravity="center"
+            />
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" >
+
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:src="@drawable/ic_launcher_background"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="70"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:weightSum="100"
+            app:layout_constraintLeft_toRightOf="@+id/iv_weather"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+            <TextView
+                android:id="@+id/tv_temp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="12 C"
+
+                android:textSize="25sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_main"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="35"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="Clear Sky"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="30"
+                android:gravity="center_vertical"
+                android:paddingLeft="25dp"
+                android:text="broken clouds"
+
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ll_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_main" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/view_divider"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+
+        <ImageView
+            android:id="@id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic__998135_backpack_rucksack_schoolbag_travel_icon"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tx_announce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="날씨가 아주 좋아요"
+            android:textSize="15sp"
+
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ll_detail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+    <LinearLayout
+        android:id="@+id/ll_detail"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginVertical="80dp"
+        android:layout_marginHorizontal="20dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_divider" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:orientation="vertical"
+            android:weightSum="100" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="45"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_free_icon_font_wind_5527972" />
+            <TextView
+                android:id="@+id/nm_wind"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:gravity="center"
+                android:text="바람  "
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv_wind"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:gravity="center_horizontal"
+                android:text="4.6m/s"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:orientation="vertical"
+            android:weightSum="100" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="45"
+
+                android:src="@drawable/ic_baseline_cloud_queue_24" />
+            <TextView
+                android:id="@+id/nm_cloud"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:gravity="center"
+                android:text="구름  "
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv_cloud"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:gravity="center_horizontal"
+                android:text="75%"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="33"
+            android:orientation="vertical"
+            android:weightSum="100" >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="45"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_baseline_water_drop_24" />
+            <TextView
+                android:id="@+id/nm_humidity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:gravity="center"
+                android:text="습도  "
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tv_humidity"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="40"
+                android:gravity="center_horizontal"
+                android:text="59%"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

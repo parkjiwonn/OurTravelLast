@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile.ApplyFriendActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0194F9">
+
+
+
+      <TextView
+          android:id="@+id/tx_cancle"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="취소"
+          android:textColor="@color/white"
+          android:textStyle="bold"
+          android:textSize="20sp"
+          />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이웃 신청"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:id="@+id/tx_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="확인"
+            android:layout_gravity="right"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"
+            />
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile2" />
+
+    <TextView
+        android:id="@+id/tx_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닉네임 님"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_button_neighbor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이웃으로 추가합니다."
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_button_bf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서로이웃을 신청합니다."
+            android:textSize="20sp"
+            android:layout_marginEnd="10dp" />
+
+
+
+    </RadioGroup>
+
+
+
+
+</LinearLayout>

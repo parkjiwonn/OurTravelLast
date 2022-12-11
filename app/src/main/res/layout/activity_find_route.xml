@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Map.FindRouteActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0194F9"
+        >
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/ic_baseline_west_24">
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tx_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="길 찾기"
+
+            android:textColor="#ffffff"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <!--edit text for our source location-->
+    <TextView
+        android:id="@+id/idEdtSource"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="출발"
+        android:background="@drawable/tx_border"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="8dp" />
+
+    <ImageButton
+        android:id="@+id/btn_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_import_export_24"
+        android:background="#00000000"
+        android:layout_gravity="right"
+        android:layout_marginRight="40dp"
+        />
+
+
+    <!--edit text for our destination location-->
+    <TextView
+        android:id="@+id/idEdtDestination"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="도착"
+        android:background="@drawable/tx_border"
+        android:layout_marginLeft="20dp"
+        android:padding="8dp" />
+
+    <!--button to draw route on maps-->
+    <Button
+        android:id="@+id/idBtnTrack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#0194F9"
+        android:padding="8dp"
+        android:text="검색"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</LinearLayout>

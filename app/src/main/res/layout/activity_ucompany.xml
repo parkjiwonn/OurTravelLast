@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".home.UcompanyActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0194F9">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_west_24"
+            android:background="#00000000"
+            >
+
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="동행글 수정 "
+            android:textColor="#ffffff">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="수정 완료"
+            android:layout_gravity="right"
+            android:backgroundTint="#0194F9"
+            >
+
+        </Button>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="'유저 이름'"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="어떤 여행을 계획하시나요?"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_ko"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/button_background_color"
+                    android:text="국내 여행"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <Button
+                    android:id="@+id/btn_glo"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="@color/button_background_color"
+                    android:text="해외 여행"
+                    android:textColor="@color/black"
+
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/typeconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="어떤 여행을 계획중인지 선택해주세요."
+                android:textColor="#F60202" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="여행 기간"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+
+                />
+
+            <Button
+                android:id="@+id/btn_datePicker"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#0194F9"
+                android:text="기간선택" />
+
+            <TextView
+                android:id="@+id/dateconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="여행 기간을 선택해주세요."
+                android:textColor="#F60202" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="지역 선택"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/Mainspinner"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/Subspinner"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:spinnerMode="dropdown" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="몇 명과 함께 여행 할까요?\n본인을 포함한 총 참여 인원 수를 알려주세요\n[최소 2명 ~ 최대 10명]"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btn_minus"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_remove_circle_outline_24" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="35dp" />
+
+                <ImageButton
+                    android:id="@+id/btn_add"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_add_circle_outline_24" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="메인 사진 등록"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/no_img">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_photo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+                    android:backgroundTint="#0194F9"
+                    android:text="사진 선택" />
+
+                <Button
+                    android:id="@+id/btn_basicphoto"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#0194F9"
+                    android:text="기본 이미지로 설정" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/photoconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="사진을 선택해주세요."
+                android:textColor="#F60202" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="제목"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_title"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center"
+                android:hint="제목을 입력해주세요." />
+
+            <TextView
+                android:id="@+id/titleconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="제목을 입력해주세요."
+                android:textColor="#F60202" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="내용"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edittext"
+                android:gravity="center"
+                android:hint="내용을 입력해주세요." />
+
+            <TextView
+                android:id="@+id/contentconfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="내용을 입력해주세요."
+                android:textColor="#F60202" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

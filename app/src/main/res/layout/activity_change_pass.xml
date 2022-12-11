@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".setting.ChangePassActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0194F9">
+
+        <ImageButton
+            android:id="@+id/btn_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_west_24"
+            android:background="#00000000"
+            >
+
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="비밀번호 변경하기."
+            android:textColor="#ffffff">
+
+        </TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="30dp"
+            android:text="현재 비밀번호"
+            android:textColor="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_nowpass"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:inputType="textPassword"
+                android:hint="PASSWORD" />
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:backgroundTint="#716E6E"
+                android:text="확인" />
+
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/nowconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="#FF0000"
+        />
+
+
+    <TextView
+        android:id="@+id/tx_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="[비밀번호 설정방법]\n영문, 숫자, 특수문자 포함 8~16자"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/tx_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="새 비밀번호"
+        android:textColor="@color/black" />
+
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:hint="NEW PASSWORD"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/passconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="#FF0000" />
+
+
+    <TextView
+        android:id="@+id/tx_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="새 비밀번호 확인"
+        android:textColor="@color/black" />
+
+
+    <EditText
+        android:id="@+id/et_passck"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="40dp"
+        android:hint="NEW PASSWORD CHECK"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/passckconfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:textColor="#FF0000" />
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="변경하기"
+
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#716E6E"
+        >
+    </Button>
+
+
+</LinearLayout>

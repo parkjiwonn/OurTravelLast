@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userinfo.LoginActivity"
+    android:orientation="vertical"
+
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"
+        android:textColor="@android:color/black"
+        >
+    </TextView>
+
+
+    <EditText
+        android:id="@+id/et_id"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#171313"
+        android:textColorHint="#100B0B"
+        android:hint="Email..."
+        android:drawablePadding="20dp"
+        android:drawableStart="@drawable/ic_baseline_person_outline_24"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:background="@drawable/rounded_edittext"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:hint="Password..."
+        android:textColor="#1C1717"
+        android:textColorHint="#100D0D"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="20dp"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_edittext"
+        >
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#0194F9"
+        android:text="로그인"
+        android:textSize="25sp"></Button>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <Button
+            android:id="@+id/btnregister"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="회원 가입"
+            android:gravity="center"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#0194F9"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/btnfindpass"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 찾기"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="#0194F9"
+            >
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".diary.WdiaryActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0194F9">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_west_24"
+            android:background="#00000000"
+            >
+
+        </ImageButton>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="일기 작성 "
+            android:textColor="#ffffff">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="등록"
+            android:layout_gravity="right"
+            android:backgroundTint="#716E6E"
+            >
+
+        </Button>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="내용을 입력해주세요." />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/radio_button_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전체 공개"
+            android:layout_marginEnd="10dp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_button_neighbor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이웃만 공개"
+            android:layout_marginEnd="10dp" />
+
+        <RadioButton
+            android:id="@+id/radio_button_bf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="서로 이웃만 공개"
+            android:layout_marginEnd="10dp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:id="@+id/btn_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이미지\n불러오기"
+                android:backgroundTint="#1E88E5"
+                />
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:orientation="horizontal"-->
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tx_itemcnt"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="0"-->
+<!--                    />-->
+
+<!--                <TextView-->
+
+<!--                    android:textColor="@color/black"-->
+<!--                    android:text=" / 3"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    />-->
+
+<!--            </LinearLayout>-->
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

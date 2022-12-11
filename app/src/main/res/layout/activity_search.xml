@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".home.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageButton
+            android:id="@+id/backbtn"
+            android:layout_width="70dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:background="#00000000"
+            >
+
+        </ImageButton>
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="250dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:textColor="#171313"
+            android:textColorHint="#100B0B"
+            android:hint="검색어를 입력해주세요.."
+
+
+
+            >
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_search_24"
+            android:background="#00000000"
+
+            >
+
+        </ImageButton>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="최근 검색어"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textSize="30sp"
+            android:textColor="@color/purple_700"
+            >
+
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:background="#00000000"
+
+            >
+
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/tx_remove"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="지우기"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            >
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tx_recent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최근 검색어가 없습니다."
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="22sp"
+        >
+
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_recent"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

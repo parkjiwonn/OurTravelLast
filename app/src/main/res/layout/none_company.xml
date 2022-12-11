@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등록된 동행글이 없습니다.\n지금 바로 새로운 게시글을 등록해보세요!"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="동행글 등록하기"
+        android:backgroundTint="#0194F9"
+        />
+
+</LinearLayout>

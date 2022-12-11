@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="my_array">
+        <item>전체</item>
+        <item>이웃의 일기</item>
+        <item>서로이웃의 일기</item>
+
+    </string-array>
+
+</resources>

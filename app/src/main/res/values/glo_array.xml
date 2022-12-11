@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="glo_array">
+
+        <item>동남아/대만/서남아</item>
+        <item>유럽/아프리카</item>
+        <item>괌/사이판/호주/뉴질랜드</item>
+        <item>미주/중남미/하와이</item>
+        <item>중국/홍콩/몽골</item>
+        <item>일본</item>
+
+    </string-array>
+
+
+    <string-array name ="dongnamah_array">
+        <item>전체</item>
+        <item>싱가포르</item>
+        <item>방콕</item>
+        <item>푸켓</item>
+        <item>치앙마이</item>
+        <item>몰디브</item>
+        <item>세부</item>
+        <item>보라카이</item>
+        <item>보홀</item>
+        <item>팔라완</item>
+        <item>마닐라</item>
+        <item>코타키나발루</item>
+        <item>캄보디아</item>
+        <item>다낭</item>
+        <item>대만</item>
+        <item>나트랑</item>
+        <item>호치민</item>
+        <item>하노이</item>
+        <item>발리</item>
+        <item>쿠알라룸프르</item>
+        <item>델리</item>
+        <item>라오스</item>
+
+
+    </string-array>
+
+    <string-array name = "europe_array">
+        <item>전체</item>
+        <item>발틱</item>
+        <item>아프리카</item>
+        <item>런던</item>
+        <item>바르셀로나</item>
+        <item>파리</item>
+        <item>비엔나</item>
+        <item>니스</item>
+        <item>이스탄불</item>
+        <item>취리히</item>
+        <item>리스본</item>
+        <item>인터라켄</item>
+        <item>프라하</item>
+        <item>로마</item>
+        <item>아테네</item>
+        <item>베니스</item>
+        <item>마드리드</item>
+        <item>푸랑크푸르트</item>
+        <item>두바이</item>
+        <item>오슬로</item>
+        <item>탈린</item>
+        <item>헬싱키</item>
+        <item>코펜하겐</item>
+        <item>와디럼</item>
+        <item>트빌리시</item>
+        <item>케이프타운</item>
+        <item>빅토리아폭포</item>
+        <item>나이로비</item>
+        <item>카이로</item>
+        <item>카사블랑카</item>
+
+
+    </string-array>
+
+    <string-array name = "gwam_array">
+        <item>전체</item>
+        <item>괌</item>
+        <item>사이판</item>
+        <item>호주</item>
+        <item>뉴질랜드</item>
+        <item>시드니</item>
+        <item>멜버른</item>
+        <item>타히티</item>
+        <item>골드코스트</item>
+        <item>브리즈번</item>
+        <item>오클랜드</item>
+        <item>퀸스타운</item>
+        <item>크라이스티처치</item>
+        <item>로토루아</item>
+        <item>팔라우</item>
+        <item>케언즈</item>
+
+    </string-array>
+
+    <string-array name = "america_array">
+        <item>전체</item>
+        <item>하와이</item>
+        <item>미서부</item>
+        <item>미동부</item>
+        <item>캐나다</item>
+        <item>중남미</item>
+        <item>호놀룰루</item>
+        <item>뉴욕</item>
+        <item>로스앤젤레스</item>
+        <item>샌프란시스코</item>
+        <item>시애틀</item>
+        <item>라스베이거스</item>
+        <item>그랜드 캐니언</item>
+        <item>워싱턴</item>
+        <item>보스턴</item>
+        <item>토론토</item>
+        <item>나이아가라</item>
+        <item>퀘벡</item>
+        <item>밴쿠버</item>
+        <item>캘거리</item>
+        <item>엘로나이프</item>
+        <item>칸쿤</item>
+        <item>마우이</item>
+        <item>힐로(빅아일랜드)</item>
+        <item>멕시코</item>
+        <item>알래스카</item>
+        <item>페루</item>
+        <item>브라질</item>
+        <item>쿠바</item>
+        <item>아르헨티나</item>
+
+
+    </string-array>
+
+    <string-array name = "china_array">
+        <item>전체</item>
+        <item>홍콩</item>
+        <item>상하이</item>
+        <item>마카오</item>
+        <item>베이징</item>
+        <item>몽골</item>
+        <item>칭다오</item>
+        <item>장자제</item>
+        <item>시안</item>
+        <item>샤먼</item>
+        <item>구이린</item>
+        <item>청두</item>
+        <item>하이난</item>
+        <item>리장</item>
+        <item>황산</item>
+        <item>쿤밍</item>
+        <item>구이양</item>
+        <item>충칭</item>
+        <item>우루무치</item>
+        <item>시닝</item>
+        <item>선전</item>
+
+    </string-array>
+
+    <string-array name = "japan_array">
+        <item>전체</item>
+        <item>도쿄</item>
+        <item>오사카</item>
+        <item>오키나와</item>
+        <item>삿포로</item>
+        <item>후라노</item>
+        <item>후쿠오카</item>
+        <item>나고야</item>
+        <item>아오모리</item>
+        <item>시즈오카</item>
+        <item>도야마</item>
+        <item>요나고</item>
+        <item>다카마츠</item>
+        <item>기타큐슈</item>
+        <item>나가사키</item>
+        <item>가고시마</item>
+        <item>오카야마</item>
+        <item>야마가타</item>
+
+
+
+    </string-array>
+
+
+</resources>
